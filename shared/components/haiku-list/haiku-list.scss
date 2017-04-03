@@ -1,0 +1,37 @@
+@import '../../styles/theme.scss';
+
+.haiku-list {
+    margin: $spacing-md;
+
+    & > div:not(:last-of-type) {
+        border-bottom: solid 1px $color-gray;
+        margin-bottom: $spacing-md;
+        padding-bottom: $spacing-md;
+        padding-top: $spacing-sm;
+    }
+
+    .list-stamp {
+        display: block;
+        font-size: $font-sm;
+        color: $color-black;
+        text-align: center;
+
+        .fa {
+            margin-right: $spacing-sm;
+            color: $color-primary;
+        }
+    }
+
+    .list-end {
+        @extend .unselectable;
+        
+        display: block;
+        font-size: $font-sm;
+        color: $color-gray;
+        text-align: center;
+
+        .fa {
+            margin-right: $spacing-sm;
+        }
+    }
+}

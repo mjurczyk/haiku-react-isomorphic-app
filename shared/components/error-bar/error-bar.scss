@@ -1,0 +1,20 @@
+@import '../../styles/theme.scss';
+
+.error-bar {
+    @extend .unselectable;
+
+    display: block;
+    width: 100%;
+    padding: $spacing-md;
+    background-color: $color-danger;
+    font-size: $font-md;
+    color: $color-white;
+    font-weight: 100;
+    text-align: center;
+
+    .fa {
+        margin-left: $spacing-md;
+        font-weight: 100;
+        cursor: pointer;
+    }
+}

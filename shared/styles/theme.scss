@@ -1,0 +1,26 @@
+$color-primary: #337ab7;
+$color-secondary: #2a357e;
+$color-danger: #dc3e1d;
+$color-white: #fff;
+$color-black: #333;
+$color-gray: #eee;
+$color-gray-dark: #777;
+
+$spacing-sm: 4px;
+$spacing-md: 8px;
+$spacing-lg: 16px;
+
+$border-radius: 3px;
+
+$font-family: 'Open Sans', sans-serif;
+$font-sm: 12px;
+$font-md: 18px;
+$font-lg: 32px;
+
+.unselectable {
+    user-select: none;
+    -ms-user-select: none;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    cursor: default;
+}

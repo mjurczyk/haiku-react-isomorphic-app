@@ -1,0 +1,50 @@
+@import '../../styles/theme.scss';
+
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    background-color: $color-primary;
+
+    .navbar-column {
+        display: flex;
+        padding: $spacing-md;
+    }
+
+    .navbar-icon {
+        @extend .unselectable;
+        
+        padding: $spacing-sm;
+        color: $color-white;
+    }
+
+    .navbar-brand {
+        @extend .unselectable;
+
+        color: $color-white;
+    }
+
+    .navbar-search {
+        flex-grow: 1;
+        border-left: solid 2px rgba($color-black, .1);
+
+        input {
+            width: 100%;
+            border: none;
+            padding: $spacing-md;
+            outline: none;
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .navbar {
+        .navbar-brand {
+            display: none;
+        }
+    }
+}
